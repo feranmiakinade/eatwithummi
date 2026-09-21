@@ -1562,7 +1562,7 @@
 
             <div class="featured-image">
                 <img
-                    src="{{ asset('images/Friedrice.png') }}"
+                    src="{{ asset('public\images\basmatifriedricenew.png') }}"
                     alt="Basmati Fried Rice"
                 >
             </div>
