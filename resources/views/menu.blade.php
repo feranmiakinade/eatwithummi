@@ -249,55 +249,51 @@
         }
 
 
-        /* =========================
-           MENU GRID
+                /* =========================
+        MENU GRID
         ========================= */
 
         .menu-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 24px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 30px;
         }
 
         .menu-card {
             background: var(--white);
-            border: 1px solid var(--border);
+            border: none;
+            border-radius: 28px;
             overflow: hidden;
-
-            transition:
-                transform 0.3s ease,
-                box-shadow 0.3s ease;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
         }
 
         .menu-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
         }
 
 
         /* =========================
-           MENU IMAGES
+        MENU IMAGES
         ========================= */
 
         .menu-card-image {
             width: 100%;
-            height: 300px;
+            height: 320px;
             overflow: hidden;
-            background: var(--light-pink);
+            background: #f3f3f3;
         }
 
         .menu-card-image img {
             width: 100%;
-            height: 100%;
+            height: 320px;
             display: block;
             object-fit: cover;
-
-            transition:
-                transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+            transition: transform 0.6s ease;
         }
 
         .menu-card:hover .menu-card-image img {
-            transform: scale(1.06);
+            transform: scale(1.04);
         }
 
 
@@ -306,9 +302,8 @@
         ========================= */
 
         .menu-card-content {
-            padding: 28px;
+            padding: 24px 26px 27px;
         }
-
         .menu-card-top {
             display: flex;
             justify-content: space-between;
@@ -328,10 +323,9 @@
         /* FOOD TITLES */
 
         .menu-card h3 {
-            font-size: 27px;
-            line-height: 1.05;
-            letter-spacing: -1px;
-            color: var(--pink);
+            font-size: 24px;
+            line-height: 1.15;
+            color: var(--black);
         }
 
         .menu-price {
@@ -923,6 +917,38 @@
                 opacity: 1;
                 transform: none;
             }
+            @media (max-width: 800px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .menu-card-image {
+        height: 340px;
+    }
+
+    .menu-card-image img {
+        height: 340px;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu-card-image {
+        height: 260px;
+    }
+
+    .menu-card-image img {
+        height: 260px;
+    }
+
+    .menu-card-content {
+        padding: 20px;
+    }
+
+    .menu-card h3 {
+        font-size: 20px;
+    }
+}
 
         }
 
@@ -1111,7 +1137,7 @@
                 <div class="menu-card-image">
 
                     <img
-                        src="{{ asset('images\basmatifriedricenew.png') }}" 
+                        src="{{ asset('images/basmatifriedricenew.png') }}" 
                         alt="Basmati Fried Rice"
                     >
 
@@ -1255,7 +1281,7 @@
                 <div class="menu-card-image">
 
                     <img
-                        src="{{ asset('images\asunricenew.jpeg') }}"
+                        src="{{ asset('images/asunricenew.jpeg') }}"
                         alt="Asun Rice"
                     >
 
@@ -1485,7 +1511,7 @@
                 <div class="menu-card-image">
 
                     <img
-                        src="{{ asset('images\nativespagnew.jpeg') }}"
+                        src="{{ asset('images/nativespagnew.jpeg') }}"
                         alt="Native Spaghetti"
                     >
 
@@ -1566,7 +1592,7 @@
                 <div class="menu-card-image">
 
                     <img
-                        src="{{ asset('images/Loadedstirfryspag.png') }}"
+                        src="{{ asset('images/loadedstirfrynew.png') }}"
                         alt="Loaded Beef Stir-Fry Spaghetti"
                     >
 

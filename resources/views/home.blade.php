@@ -325,7 +325,7 @@
 
     .featured-image img {
         width: 100%;
-        height: 100%;
+        height: 320px;
         display: block;
         object-fit: cover;
         transition: transform 0.6s ease;
@@ -335,9 +335,9 @@
         transform: scale(1.04);
     }
 
-    .featured-large .featured-image {
+    /* .featured-large .featured-image {
         height: 430px;
-    }
+    } */
 
 
     /* CARD INFO */
@@ -1562,7 +1562,7 @@
 
             <div class="featured-image">
                 <img
-                    src="{{ asset(images\basmatifriedricenew.png') }}"
+                    src="{{ asset('images/basmatifriedricenew.png') }}"
                     alt="Basmati Fried Rice"
                 >
             </div>
@@ -1587,7 +1587,7 @@
 
             <div class="featured-image">
                 <img
-                    src="{{ asset('images\nativespagnew.jpeg') }}"
+                    src="{{ asset('images/nativespagnew.jpeg') }}"
                     alt="Native Spaghetti"
                 >
             </div>
