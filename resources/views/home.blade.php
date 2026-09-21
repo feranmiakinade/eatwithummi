@@ -1537,7 +1537,7 @@
 
             <div class="featured-image">
                 <img
-                    src="{{ asset('images/Asunrice.png') }}"
+                    src="{{ asset('images\asunricenew.jpeg') }}"
                     alt="Asun Rice"
                 >
             </div>
@@ -1562,7 +1562,7 @@
 
             <div class="featured-image">
                 <img
-                    src="{{ asset('public\images\basmatifriedricenew.png') }}"
+                    src="{{ asset(images\basmatifriedricenew.png') }}"
                     alt="Basmati Fried Rice"
                 >
             </div>
@@ -1587,7 +1587,7 @@
 
             <div class="featured-image">
                 <img
-                    src="{{ asset('images/Nativespag.png') }}"
+                    src="{{ asset('images\nativespagnew.jpeg') }}"
                     alt="Native Spaghetti"
                 >
             </div>
@@ -1612,7 +1612,7 @@
 
             <div class="featured-image">
                 <img
-                    src="{{ asset('images/Loadedstirfryspag.png') }}"
+                    src="{{ asset('images\loadedstirfrynew.png') }}"
                     alt="Loaded Beef Stir-Fry Spaghetti"
                 >
             </div>

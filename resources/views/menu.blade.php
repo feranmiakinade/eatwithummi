@@ -1111,7 +1111,7 @@
                 <div class="menu-card-image">
 
                     <img
-                        src="{{ asset('images/Friedrice.png') }}"
+                        src="{{ asset('images\basmatifriedricenew.png') }}" 
                         alt="Basmati Fried Rice"
                     >
 
@@ -1119,7 +1119,7 @@
 
 
                 <div class="menu-card-content">
-
+ 
                     <div class="menu-card-top">
 
                         <div>
@@ -1255,7 +1255,7 @@
                 <div class="menu-card-image">
 
                     <img
-                        src="{{ asset('images/Asunrice.png') }}"
+                        src="{{ asset('images\asunricenew.jpeg') }}"
                         alt="Asun Rice"
                     >
 
@@ -1485,7 +1485,7 @@
                 <div class="menu-card-image">
 
                     <img
-                        src="{{ asset('images/Nativespag.png') }}"
+                        src="{{ asset('images\nativespagnew.jpeg') }}"
                         alt="Native Spaghetti"
                     >
 
